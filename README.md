@@ -1,2 +1,2 @@
-# Fuck you James challinor 46 wallshead way newport church aston
+# Fuck you James challinor
 james challinor is a poopster
