@@ -1,57 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-.search-wrapper {
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  position: relative;
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border-radius: 60px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  padding: 5px;
-  width: 50px;
-  height: 50px;
-  transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.3s ease;
-  overflow: hidden;
+:root {
+  --tokyo-bg: #1a1b26;
+  --tokyo-bg-storm: #24283b;
+  --tokyo-fg: #c0caf5;
+  --tokyo-fg-dark: #a9b1d6;
+  --tokyo-comment: #565f89;
+  --tokyo-blue: #7aa2f7;
+  --tokyo-cyan: #7dcfff;
+  --tokyo-green: #9ece6a;
+  --tokyo-magenta: #bb9af7;
+  --tokyo-purple: #9d7cd8;
+  --tokyo-orange: #ff9e64;
+  --tokyo-yellow: #e0af68;
+  --tokyo-red: #f7768e;
+  --tokyo-teal: #1abc9c;
 }
-.search-wrapper:hover,
-.search-wrapper:focus-within {
-  width: 320px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-.search-input {
-  border: none;
-  background: transparent;
-  outline: none;
-  color: #1f2937;
-  font-size: 1rem;
-  padding: 0 0 0 20px;
-  width: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease, width 0.4s ease;
-  height: 100%;
-}
-.search-wrapper:hover .search-input,
-.search-wrapper:focus-within .search-input {
-  width: calc(100% - 50px);
-  opacity: 1;
-}
-.search-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background: #2563eb;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-.search-btn:hover {
-  background: #1d4ed8;
-  transform: rotate(90deg);
+
+* { background-color:var(--tokyo-bg) ;}
+* { color:var(--tokyo-fg)}
+
+.header {
+  color: #c0caf5;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 48px;
+  font-style: normal;
 }
