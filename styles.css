@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
 :root {
   --tokyo-bg: #1a1b26;
   --tokyo-bg-storm: #24283b;
@@ -19,10 +17,36 @@
 
 * { background-color:var(--tokyo-bg) ;}
 * { color:var(--tokyo-fg)}
+* { font-family: "JetBrains Mono", monospace; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  max-width: 60rem;
+}
 
 .header {
-  color: #c0caf5;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 48px;
+  color:var(--tokyo-cyan);
+  font-size: 40px;
   font-style: normal;
+}
+
+.h2 {
+  color:var(--tokyo-purple);
+  font-size: 28px;
+}
+
+pre {
+  background: var(--tokyo-bg-storm);
+  margin: 0;
+  padding: 0.2rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+code {
+  background: var(--tokyo-bg-storm);
+  font-size: 18px;
 }
